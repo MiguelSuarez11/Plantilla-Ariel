@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    {{-- HEADER --}}
     <header class='flex  py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[80px] tracking-wide relative z-50'>
         <div class='flex flex-wrap items-center gap-5 w-full'>
             <a href="javascript:void(0)"><img src="{{ asset('imagenes/brand.svg') }}" alt="logo"
@@ -50,14 +51,20 @@
             </div>
 
             <div class='flex items-center max-lg:ml-auto space-x-6'>
-                <button
-                    class='px-4 py-2 text-[15px] rounded font-semibold text-[#333] bg-slate-400  hover:bg-[#007bff] transition-all ease-in-out duration-300 bg-transparent hover:text-white'>Iniciar
-                    sesion</button>
+               <a href="{{ url('login') }}">
+                   <button
+                   class='px-4 py-2 text-[15px] rounded font-semibold text-[#333] bg-slate-400  hover:bg-[#007bff] transition-all ease-in-out duration-300 bg-transparent hover:text-white'>Iniciar
+                   sesion</button>
+
+               </a>
 
 
-                <button type="button"
-                    class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-blue-700 to-blue-300">Probar
-                    Gratis</button>
+               <a href="{{ url('registro') }}">
+                   <button type="button"
+                   class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-blue-700 to-blue-300">Probar
+                   Gratis</button>
+
+               </a>
 
                 <button id="toggleOpen" class='lg:hidden'>
                     <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +78,7 @@
     </header>
 
 
-    <!-- ====== Blog Section Start -->
+   {{-- SECCION PRINCIPAL --}}
     <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark">
         <div class="container mx-auto">
             <div class="flex flex-wrap justify-center -mx-4">
@@ -117,7 +124,7 @@
 
     </section>
 
-    <!-- ====== Brands Section Start -->
+    {{-- SECCION DE CONFIANZA --}}
     <section>
         <div class="container mx-auto">
             <style>
@@ -243,10 +250,11 @@
             </div>
         </div>
     </section>
-    <!-- ====== Brands Section End -->
 
 
 
+
+    {{-- SECCION DE BRAND --}}
     <section class="mt-44">
         <div
             class="max-w-6xl mx-auto flex items-center bg-gradient-to-r from-[#1A2848] to-blue-900 px-8 py-8 rounded-2xl shadow-lg">
@@ -274,6 +282,8 @@
         </div>
     </section>
 
+
+    {{-- SECCION DE BENEFICIOS --}}
     <section class="mt-14">
         <div class="bg-white font-[sans-serif]">
             <div class="max-w-lg mx-auto p-4 text-center">
@@ -346,6 +356,7 @@
     </section>
 
 
+    {{-- SECCION DE CARACTERISTICAS --}}
     <section>
         <section class="mt-16">
             <div class="max-w-6xl mx-auto text-center mb-12">
@@ -437,7 +448,7 @@
         </section>
     </section>
 
-
+    {{-- SECCION DE NORMAS --}}
     <section class="mt-16 text-center">
         <div class="max-w-4xl mx-auto">
 
@@ -479,8 +490,6 @@
 
 
     {{-- TESTIMONIOS --}}
-
-
     <section class="m-40">
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold mb-2">Historias de éxito</h1>
@@ -607,7 +616,7 @@
 
 
 
-
+    {{-- SECCION DE SEGURIDAD DE DATOS --}}
     <section class="m-40">
         <div class="max-w-1xl mx-auto text-center px-20 mt-[-120px]">
             <img src="{{ asset('imagenes/shield.svg') }}" alt="Escudo de Seguridad" class="mx-auto w-94 h-94">
