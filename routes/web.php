@@ -13,3 +13,7 @@ Route::get('/login', function () {
 Route::get('/registro', function () {
     return view('registro');
 });
+
+Route::get('/chat', function () {
+    return view('chat   ');
+});

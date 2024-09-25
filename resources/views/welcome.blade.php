@@ -66,6 +66,13 @@
 
                </a>
 
+               <a href="{{ url('chat') }}">
+                <button type="button"
+                class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-lime-600 to-slate-200">
+                Abrir chat</button>
+
+            </a>
+
                 <button id="toggleOpen" class='lg:hidden'>
                     <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
